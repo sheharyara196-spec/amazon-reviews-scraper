@@ -108,16 +108,16 @@ The structure of each item in Amazon Reviews looks like this:
 ```
 
 ## FAQ
-**Can I extract reviews from multiple products at once?**
+**Can I extract reviews from multiple products at once?**<br/>
 Yes, Amazon Reviews Scraper supports batch processing, allowing the extraction of reviews from multiple products simultaneously. 🔄
 
-**Is there a limit to the number of reviews I can scrape?**
+**Is there a limit to the number of reviews I can scrape?**<br/>
 While there's technically no limit, users can set parameters to manage the scope of data according to their project needs.  📏
 
-**How do I handle data from different Amazon regions?**
+**How do I handle data from different Amazon regions?**<br/>
 The scraper supports all Amazon TLDs, enabling users to specify the region for targeted review extraction. 🌍
 
-**Can I do my research by using just keywords with Amazon Reviews Scraper?**
+**Can I do my research by using just keywords with Amazon Reviews Scraper?**<br/>
 If you need to start with keywords, you can check our Amazon Scraper product. It provides more comprehensive data gathering. 🔍
 
 ## Contact
