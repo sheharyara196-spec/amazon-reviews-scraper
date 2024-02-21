@@ -1,3 +1,5 @@
+[https://apify.com/epctex/amazon-reviews-scraper](https://apify.com/epctex/amazon-reviews-scraper?fpr=yhdrb)
+
 # Amazon Reviews Scraper Actor
 
 ## What is Amazon Reviews Scraper actor?
