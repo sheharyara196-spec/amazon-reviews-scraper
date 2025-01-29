@@ -123,4 +123,4 @@ The scraper supports all Amazon TLDs, enabling users to specify the region for t
 If you need to start with keywords, you can check our Amazon Scraper product. It provides more comprehensive data gathering. 🔍
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [business@epctex.com](mailto:business@epctex.com) is at your service.
