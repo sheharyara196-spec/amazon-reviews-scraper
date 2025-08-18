@@ -8,7 +8,7 @@
       "title": "Start URLs",
       "type": "array",
       "description": "List of Amazon product or review page URLs to scrape",
-      "editor": "textarea"
+      "editor": "select"
     },
     "asin": {
       "title": "ASIN",
