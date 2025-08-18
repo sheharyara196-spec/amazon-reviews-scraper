@@ -1,4 +1,5 @@
 {
+  "schemaVersion": "v2",
   "title": "Amazon Reviews Scraper",
   "description": "Scrape and filter Amazon product reviews.",
   "type": "object",
