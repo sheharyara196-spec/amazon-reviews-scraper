@@ -1,0 +1,45 @@
+{
+  "title": "Amazon Reviews Scraper",
+  "description": "Scrape and filter Amazon product reviews.",
+  "type": "object",
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "List of Amazon product or review page URLs to scrape",
+      "editor": "requestListSources"
+    },
+    "maxReviews": {
+      "title": "Maximum number of reviews",
+      "type": "integer",
+      "default": 30,
+      "minimum": 1
+    },
+    "stars": {
+      "title": "Filter by Star Rating",
+      "type": "string",
+      "enum": ["all", "one_star", "two_star", "three_star", "four_star", "five_star"],
+      "default": "all"
+    },
+    "sortBy": {
+      "title": "Sort Reviews",
+      "type": "string",
+      "enum": ["recent", "top_rated", "helpful"],
+      "default": "recent",
+      "description": "Choose how to sort reviews (newest first, top rated, or most helpful)."
+    },
+    "reviewerType": {
+      "title": "Reviewer Type",
+      "type": "string",
+      "enum": ["all_reviews", "verified_purchase"],
+      "default": "all_reviews"
+    },
+    "mediaType": {
+      "title": "Media Type",
+      "type": "string",
+      "enum": ["all_contents", "with_images", "with_videos"],
+      "default": "all_contents"
+    }
+  },
+  "required": ["startUrls"]
+}
