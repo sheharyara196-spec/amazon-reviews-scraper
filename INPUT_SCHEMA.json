@@ -21,30 +21,35 @@
     "maxReviews": {
       "title": "Maximum number of reviews",
       "type": "integer",
+      "description": "The maximum number of reviews to scrape from each product",
       "default": 30,
       "minimum": 1
     },
     "stars": {
       "title": "Filter by Star Rating",
       "type": "string",
+      "description": "Choose which reviews to scrape based on star rating",
       "enum": ["all", "one_star", "two_star", "three_star", "four_star", "five_star"],
       "default": "all"
     },
     "sortBy": {
       "title": "Sort Reviews",
       "type": "string",
+      "description": "Sort reviews by newest, top rated, or most helpful",
       "enum": ["recent", "top_rated", "helpful"],
       "default": "recent"
     },
     "reviewerType": {
       "title": "Reviewer Type",
       "type": "string",
+      "description": "Filter by all reviews or only verified purchases",
       "enum": ["all_reviews", "verified_purchase"],
       "default": "all_reviews"
     },
     "mediaType": {
       "title": "Media Type",
       "type": "string",
+      "description": "Filter reviews by content type (all, images, or videos)",
       "enum": ["all_contents", "with_images", "with_videos"],
       "default": "all_contents"
     }
