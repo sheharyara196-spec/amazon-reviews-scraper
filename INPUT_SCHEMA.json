@@ -1,45 +1,37 @@
 {
   "title": "Amazon Reviews Scraper",
-  "description": "Scrape and filter Amazon product reviews.",
   "type": "object",
+  "schemaVersion": 1,
   "properties": {
-    "startUrls": {
-      "title": "Start URLs",
-      "type": "array",
-      "description": "List of Amazon product or review page URLs to scrape",
-      "editor": "requestListSources"
-    },
-    "maxReviews": {
-      "title": "Maximum number of reviews",
-      "type": "integer",
-      "default": 30,
-      "minimum": 1
-    },
-    "stars": {
-      "title": "Filter by Star Rating",
+    "asin": {
+      "title": "ASIN",
       "type": "string",
-      "enum": ["all", "one_star", "two_star", "three_star", "four_star", "five_star"],
-      "default": "all"
+      "description": "Amazon ASIN of the product you want to scrape"
+    },
+    "domainCode": {
+      "title": "Amazon Domain",
+      "type": "string",
+      "enum": ["com", "co.uk", "de", "in"],
+      "default": "com",
+      "description": "Which Amazon marketplace to scrape"
+    },
+    "filterByStar": {
+      "title": "Filter by star rating",
+      "type": "string",
+      "enum": ["one_star", "two_star", "three_star", "four_star", "five_star", "all_stars"],
+      "default": "all_stars"
     },
     "sortBy": {
-      "title": "Sort Reviews",
+      "title": "Sort reviews by",
       "type": "string",
-      "enum": ["recent", "top_rated", "helpful"],
-      "default": "recent",
-      "description": "Choose how to sort reviews (newest first, top rated, or most helpful)."
+      "enum": ["recent", "top_rated"],
+      "default": "recent"
     },
-    "reviewerType": {
-      "title": "Reviewer Type",
-      "type": "string",
-      "enum": ["all_reviews", "verified_purchase"],
-      "default": "all_reviews"
-    },
-    "mediaType": {
-      "title": "Media Type",
-      "type": "string",
-      "enum": ["all_contents", "with_images", "with_videos"],
-      "default": "all_contents"
+    "maxReviews": {
+      "title": "Max number of reviews to scrape",
+      "type": "integer",
+      "default": 30
     }
   },
-  "required": ["startUrls"]
+  "required": ["asin"]
 }
