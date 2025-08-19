@@ -1,55 +1,39 @@
 {
-  "schemaVersion": 1,
   "title": "Amazon Reviews Scraper",
-  "description": "Scrape and filter Amazon product reviews.",
   "type": "object",
   "properties": {
     "startUrls": {
       "title": "Start URLs",
       "type": "array",
-      "description": "List of Amazon product or review page URLs to scrape",
-      "editor": "select",
-      "default": ["https://www.amazon.com/dp/B08N5WRWNW"]
-    },
-    "asin": {
-      "title": "ASIN",
-      "type": "string",
-      "editor": "textfield",
-      "description": "Amazon Standard Identification Number (ASIN) of the product",
-      "default": "B08N5WRWNW"
+      "description": "List of Amazon product URLs to scrape",
+      "editor": "textfield"
     },
     "maxReviews": {
-      "title": "Maximum number of reviews",
+      "title": "Maximum Reviews",
       "type": "integer",
-      "description": "The maximum number of reviews to scrape from each product",
-      "default": 30,
-      "minimum": 1
+      "default": 30
     },
     "stars": {
-      "title": "Filter by Star Rating",
+      "title": "Star Rating Filter",
       "type": "string",
-      "description": "Choose which reviews to scrape based on star rating",
       "enum": ["all", "one_star", "two_star", "three_star", "four_star", "five_star"],
       "default": "all"
     },
     "sortBy": {
       "title": "Sort Reviews",
       "type": "string",
-      "description": "Sort reviews by newest, top rated, or most helpful",
       "enum": ["recent", "top_rated", "helpful"],
       "default": "recent"
     },
     "reviewerType": {
       "title": "Reviewer Type",
       "type": "string",
-      "description": "Filter by all reviews or only verified purchases",
       "enum": ["all_reviews", "verified_purchase"],
       "default": "all_reviews"
     },
     "mediaType": {
       "title": "Media Type",
       "type": "string",
-      "description": "Filter reviews by content type (all, images, or videos)",
       "enum": ["all_contents", "with_images", "with_videos"],
       "default": "all_contents"
     }
